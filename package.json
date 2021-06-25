@@ -1,5 +1,6 @@
 {
   "name": "john-m",
+  "homepage": "http://jmarcza2.github.io/john-m",
   "version": "4.0.0",
   "description": "A highly scalable, offline-first foundation with the best DX and a focus on performance and best practices",
   "repository": {
@@ -42,7 +43,9 @@
     "test": "cross-env NODE_ENV=test jest --coverage",
     "test:watch": "cross-env NODE_ENV=test jest --watchAll",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
-    "prettify": "prettier --write"
+    "prettify": "prettier --write",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": [
     "last 2 versions",
@@ -88,7 +91,7 @@
     "less": "^4.1.1",
     "less-loader": "^9.1.0",
     "lodash": "^4.17.21",
-    "minimist": "1.2.0",
+    "minimist": "^1.2.5",
     "prop-types": "^15.7.2",
     "react": "16.8.6",
     "react-darkreader": "^1.5.6",
@@ -163,10 +166,10 @@
     "jest-styled-components": "6.3.1",
     "lint-staged": "8.1.5",
     "ngrok": "3.1.1",
-    "node-plop": "0.18.0",
+    "node-plop": "^0.26.2",
     "null-loader": "0.1.1",
     "offline-plugin": "5.0.6",
-    "plop": "2.3.0",
+    "plop": "^2.7.4",
     "pre-commit": "1.2.2",
     "prettier": "1.17.0",
     "react-app-polyfill": "0.2.2",
@@ -180,13 +183,13 @@
     "stylelint-config-styled-components": "0.1.1",
     "stylelint-processor-styled-components": "1.6.0",
     "svg-url-loader": "2.3.2",
-    "terser-webpack-plugin": "1.2.3",
+    "terser-webpack-plugin": "^1.2.3",
     "url-loader": "1.1.2",
     "webpack": "4.30.0",
     "webpack-cli": "3.3.0",
     "webpack-dev-middleware": "3.6.2",
     "webpack-hot-middleware": "2.24.3",
-    "webpack-pwa-manifest": "4.0.0",
+    "webpack-pwa-manifest": "^4.3.0",
     "whatwg-fetch": "3.0.0"
   }
 }
